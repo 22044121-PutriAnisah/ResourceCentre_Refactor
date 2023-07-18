@@ -151,20 +151,6 @@ public class ResourceCentre {
 		Helper.line(80, "-");
 	}
 
-
-	//================================= Option 1 View (CRUD - Read) =================================
-
-	public static String showAvailability(boolean isAvailable) {
-		String avail;
-
-		if (isAvailable == true) {
-			avail = "Yes";
-		} else {
-			avail = "No";
-		}
-		return avail;
-	}
-
 	// ================================= Option 1 View (CRUD - Read)
 	// =================================
 
@@ -177,10 +163,7 @@ public class ResourceCentre {
 
 
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).getAssetTag(),
-					camcorderList.get(i).getDescription(),
-					ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable()),
-					camcorderList.get(i).getDueDate(), camcorderList.get(i).getOpticalZoom());
+			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).toString());
 
 			output += String.format("%-84s \n", camcorderList.get(i).toString());
 
@@ -204,10 +187,7 @@ public class ResourceCentre {
 			output += String.format("%-83 \n", chromebookList.get(i).toString());
 
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
-					chromebookList.get(i).getDescription(),
-					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
-					chromebookList.get(i).getDueDate(), chromebookList.get(i).getOs());
+			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).toString());
 
 			output += String.format("%-83s \n", chromebookList.get(i).toString());
 
