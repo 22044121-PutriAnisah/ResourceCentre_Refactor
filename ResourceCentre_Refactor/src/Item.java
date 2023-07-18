@@ -16,7 +16,7 @@ public class Item {
 				description, 
 				showAvailability(isAvailable),
 				dueDate);
-		// Write your codes here
+		
 		return itemInfo;
 	}
 	public String showAvailability(boolean isAvailable) {

@@ -3,9 +3,7 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 	   
-	/**
-	 * 
-	 */
+	
 	private static final int OPTION_RETURN = 4;
 	/**
 	 * 
